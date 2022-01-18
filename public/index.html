@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Full Stack Ecommerce </title>
+</head>
+<body>
+    
+<nav class="navbar"></nav>
+
+<!-- Hero section -->
+<header class="hero-section">
+    <div class="content">
+        <img src="./images/logo.png" class="logo" alt="">
+        <p class="sub-heading">Best fashion collection of all time</p>
+    </div>
+</header>
+
+<section id="men-tshirt-products"></section>
+
+<!-- Collections -->
+<section class="collection-container">
+    <a href="" class="collection">
+        <img src="./images/product.jpg" alt="">
+        <p class="collection-title">women <br> apparels</p>
+    </a>
+    <a href="" class="collection">
+        <img src="./images/product.jpg" alt="">
+        <p class="collection-title">men <br> apparels</p>
+    </a>
+    <a href="" class="collection">
+        <img src="./images/product.jpg" alt="">
+        <p class="collection-title">accessories</p>
+    </a>
+</section>
+
+<section id="men-tshirt-products-2"></section>
+
+<footer></footer>
+
+<script src="js/nav.js"></script>
+<script src="js/index.js"></script>
+<script src="js/footer.js"></script>
+
+<script>
+    getProducts('Men Tshirt').then(data => createProductSlider(data, '#men-tshirt-products', 'Men T-shirt')) //currently no products for this to show
+    getProducts('Men Tshirt').then(data => createProductSlider(data, '#men-tshirt-products', 'Men T-shirt'))
+</script>
+
+</body>
+</html>
+
